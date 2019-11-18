@@ -1,5 +1,6 @@
 /*basisstijl*/
 
+
 body {
     font-family: tahoma, sans-serif;
     background-color: lightcyan;
@@ -24,4 +25,26 @@ a:hover {
 a:active {
     background-color: inherit;
     color: blue;
+}
+
+nav h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: palevioletred;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid black
+}
+
+nav ul {
+
+    justify-content: space-around;
+    align-self: center;
+    flex-basis: 1000px;
+
 }
