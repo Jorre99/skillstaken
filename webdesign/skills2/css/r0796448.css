@@ -5,6 +5,7 @@ body {
     font-family: tahoma, sans-serif;
     background-color: lightcyan;
     color: black;
+
 }
 
 a:link {
@@ -30,21 +31,25 @@ a:active {
 nav h2 {
     margin: 0;
     padding: 20px;
-    background-color: palevioletred;
+    background-color: deepskyblue;
     font-size: 30px;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    border: 3px solid black
+    border: 3px solid black;
+    background-image: url(../images/checkerboard-cross.png);
+    background-repeat: repeat;
+
 }
 
 nav ul {
-
+    display: flex;
     justify-content: space-around;
     align-self: center;
     flex-basis: 1000px;
 
 }
+
+section {}
