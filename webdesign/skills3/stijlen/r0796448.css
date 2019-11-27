@@ -8,6 +8,10 @@ body {}
     .col-lg {
         display: none;
     }
+
+    nav {
+        display: none;
+    }
 }
 
 
@@ -19,6 +23,10 @@ body {}
     }
 
     .col-md {
+        display: block;
+    }
+
+    nav {
         display: block;
     }
 }
