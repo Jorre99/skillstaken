@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="stijl.css">
     <link rel="icon" href="favicon.ico">
     <meta name="author" content="Jorre Housen">
@@ -13,21 +15,24 @@
 
 <body>
     <div id="container">
-        <header>
-            <h1>Welkom op mijn webruimte!</h1>
-            <nav>
-                <h2>Mijn projecten</h2>
-                <ul>
-                    <li>Webdesign essentials
+        <header class="row">
+            <div class="title col-12">
+                <h1 class="col-12">Jorre Housen</h1>
+                <p>I welcome you</p>
+            </div>
+            <nav class="row">
+                <h2 class="col-12">Mijn projecten</h2>
+                <ul class="row">
+                    <li class="col-6">Webdesign essentials
                         <ul>
-                            <li><a href="webdesign/skills2/r0796448skills2.html">Skillstaak 2</a></li>
-                            <li><a href="webdesign/skills3/r0796448skills3.html">Skillstaak 3</a></li>
+                            <li class="litaken"><a href="webdesign/skills2/r0796448skills2.html" class="taken">Skillstaak 2</a></li>
+                            <li class="litaken"><a href="webdesign/skills3/r0796448skills3.html" class="taken">Skillstaak 3</a></li>
                         </ul>
                     </li>
-                    <li>Webdesign met HTML5
+                    <li class="col-6">Webdesign met HTML5
                         <ul>
-                            <li><a href="#">Uitdaging 1</a></li>
-                            <li><a href="#">Uitdaging 2</a></li>
+                            <li class="litaken"><a href="#" class="taken">Uitdaging 1</a></li>
+                            <li class="litaken"><a href="#" class="taken">Uitdaging 2</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -35,8 +40,14 @@
         </header>
         <article>
             <h2>Wie ben ik?</h2>
-            <p>Ik ben Jorre Housen. Als 20-jarige student op de Thomas More hogeschool te Geel ben ik mateloos geïnteresseerd in IT en technologie. In de IT Factory leer ik de nieuwste vaardigheden van de IT-wereld. Buiten school werk ik ook geregeld aan projecten samen met mijn broer om mijn programeertalen bij te schaven en zo een veelzijdigere programeur te worden</p>
-            <p>IT neemt sinds een jaar enorm veel van mijn tijd in beslag. Maar als ik de tijd vind om andere dingen te doen, is dit muziekgerelateerd. Al sinds mijn 8ste speel ik gitaar en ben ik bezig met muziek. Muziek produceren, opnemen, afmixen en masteren zijn competenties die ik over de jaren heen heb leren beheersen. Ook als dj heb ik in het verleden een drukke agenda gehad. Mijn muziekale passie heb ik echter op een lager pitje moeten zetten om mij volledig te kunnen focussen op mijn studies. </p>
+            <div class="row">
+                <figure class="col-6">
+                    <img src="images_indexpage/Jorre_Housen_pasfoto.jpg" alt="pasfoto" width="300">
+                </figure>
+                <p class="col-6">Ik ben Jorre Housen. Als 20-jarige student op de Thomas More hogeschool te Geel ben ik mateloos geïnteresseerd in IT en technologie. In de IT Factory leer ik de nieuwste vaardigheden van de IT-wereld. Buiten school werk ik ook geregeld aan projecten samen met mijn broer om mijn programeertalen bij te schaven en zo een veelzijdigere programeur te worden.
+                    IT neemt sinds een jaar enorm veel van mijn tijd in beslag. Maar als ik de tijd vind om andere dingen te doen, is dit muziekgerelateerd. Al sinds mijn 8ste speel ik gitaar en ben ik bezig met muziek. Muziek produceren, opnemen, afmixen en masteren zijn competenties die ik over de jaren heen heb leren beheersen. Ook als dj heb ik in het verleden een drukke agenda gehad. Mijn muziekale passie heb ik echter op een lager pitje moeten zetten om mij volledig te kunnen focussen op mijn studies.</p>
+            </div>
+            <p> </p>
         </article>
         <footer>
             <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
@@ -44,6 +55,4 @@
         </footer>
     </div>
 
-</body>
-
-</html>
+</body></html>
