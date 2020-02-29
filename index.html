@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="stijl.css">
     <link rel="icon" href="favicon.ico">
@@ -17,19 +18,22 @@
     <div id="container">
         <header class="row">
             <div class="title col-12">
+                <a href="#Mijn_Projecten"><i class="material-icons" id="drop_icon">
+                        arrow_drop_down_circle
+                    </i></a>
                 <h1 class="col-12">Jorre Housen</h1>
                 <p>I welcome you</p>
             </div>
-            <nav class="row">
+            <nav class="row" id="Mijn_Projecten">
                 <h2 class="col-12">Mijn projecten</h2>
                 <ul class="row">
-                    <li class="col-6">Webdesign essentials
+                    <li class="col-sm-12 col-lg-6">Webdesign essentials
                         <ul>
                             <li class="litaken"><a href="webdesign/skills2/r0796448skills2.html" class="taken">Skillstaak 2</a></li>
                             <li class="litaken"><a href="webdesign/skills3/r0796448skills3.html" class="taken">Skillstaak 3</a></li>
                         </ul>
                     </li>
-                    <li class="col-6">Webdesign met HTML5
+                    <li class="col-sm-12 col-lg-6">Webdesign met HTML5
                         <ul>
                             <li class="litaken"><a href="#" class="taken">Uitdaging 1</a></li>
                             <li class="litaken"><a href="#" class="taken">Uitdaging 2</a></li>
@@ -41,10 +45,10 @@
         <article>
             <h2>Wie ben ik?</h2>
             <div class="row">
-                <figure class="col-6">
+                <figure class="col-lg-6">
                     <img src="images_indexpage/Jorre_Housen_pasfoto.jpg" alt="pasfoto" width="300">
                 </figure>
-                <p class="col-6">Ik ben Jorre Housen. Als 20-jarige student op de Thomas More hogeschool te Geel ben ik mateloos geïnteresseerd in IT en technologie. In de IT Factory leer ik de nieuwste vaardigheden van de IT-wereld. Buiten school werk ik ook geregeld aan projecten samen met mijn broer om mijn programeertalen bij te schaven en zo een veelzijdigere programeur te worden.
+                <p class="col-lg-6">Ik ben Jorre Housen. Als 20-jarige student op de Thomas More hogeschool te Geel ben ik mateloos geïnteresseerd in IT en technologie. In de IT Factory leer ik de nieuwste vaardigheden van de IT-wereld. Buiten school werk ik ook geregeld aan projecten samen met mijn broer om mijn programeertalen bij te schaven en zo een veelzijdigere programeur te worden.
                     IT neemt sinds een jaar enorm veel van mijn tijd in beslag. Maar als ik de tijd vind om andere dingen te doen, is dit muziekgerelateerd. Al sinds mijn 8ste speel ik gitaar en ben ik bezig met muziek. Muziek produceren, opnemen, afmixen en masteren zijn competenties die ik over de jaren heen heb leren beheersen. Ook als dj heb ik in het verleden een drukke agenda gehad. Mijn muziekale passie heb ik echter op een lager pitje moeten zetten om mij volledig te kunnen focussen op mijn studies.</p>
             </div>
             <p> </p>
@@ -54,5 +58,25 @@
 
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 
 </body></html>
